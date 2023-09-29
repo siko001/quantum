@@ -30,7 +30,7 @@ if ($products_query->have_posts()) :
         <div class="flex product_heading items-baseline mb-8">
             <!-- title and red box -->
             <div class="red-box"></div>
-            <h3 class="product_title font-custom"><?php the_title(); ?></h3>
+            <h3 id="<?= the_title() ?>" class="product_title font-custom"><?php the_title(); ?></h3>
         </div>
 
         <hr>

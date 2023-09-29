@@ -19,10 +19,10 @@ get_header()
     <!-- buttons for desktop (phone hidden) -->
     <div class="hidden lg:block">
         <div class="flex relative gap-8 z-10 mx-auto justify-center" style="width: 100%; left: -30px; margin-top: 20rem; margin-bottom: 200px">
-            <button class="border border-p-color bg-p-color hover:border-blue-500 active:bg-p-color text-white p-3 px-8">Our Products</button>
-            <button class="border-2 border-p-color hover:border-blue-500 active:bg-p-color p-3 text-white px-8">Performance</button>
-            <button class="border-2 border-p-color hover:border-blue-500 active:bg-p-color p-3 text-white px-8">Essential</button>
-            <button class="border-2 border-p-color hover:border-blue-500 active:bg-p-color p-3 text-white px-8">Compact</button>
+            <a href="#products" class=" cursor-pointer border border-p-color bg-p-color hover:border-blue-500 active:bg-p-color active:border-p-color text-white p-3 px-8">Our Products</a>
+            <a href="#Performance Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">Performance</a>
+            <a href="#Essential Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">Essential</a>
+            <a href="#Compact Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">Compact</a>
         </div>
     </div>
     <!-- Text for Desktop (phone hidden) -->
@@ -35,7 +35,7 @@ get_header()
 
 <!--Start Product Section -->
 <section class="flex flex-col gap-5">
-    <h1 class="text-4xl lg:text-5xl mr-2 font-custom relative lg:pt-40 lg:mt-10 lg:ml-32 section_title" style="padding-top: 100px">
+    <h1 id="products" class="text-4xl lg:text-5xl mr-2 font-custom relative lg:pt-40 lg:mt-10 lg:ml-32 section_title" style="padding-top: 100px">
         Our Products
     </h1>
     <br />
@@ -50,7 +50,7 @@ get_header()
 
 
 <!-- Start Services Section -->
-<section>
+<section id="services">
     <!-- Section Heading -->
     <div class="section_heading">
         <div class="left">
@@ -65,13 +65,13 @@ get_header()
     <!--Full Services COntainer -->
     <div class="full_container flex flex-col">
         <!-- Top Service Container -->
-        <div class="top_container flex flex-col lg:flex-row justify-between mb-10">
+        <div class="top_container flex flex-col lg:flex-row justify-evenly mb-10">
 
             <?= get_template_part("template-parts/service-top") ?>
         </div>
 
         <!-- Bottom Service Continer -->
-        <div class="bottom_container flex flex-col lg:flex-row  justify-between">
+        <div class="bottom_container flex flex-col lg:flex-row  justify-evenly">
             <?= get_template_part("template-parts/service-bottom") ?>
         </div>
 
@@ -84,11 +84,11 @@ get_header()
     <div class="top-footer flex-col justify-center items-center">
         <!-- Inner footer Div -->
         <div class="top-footer__inner flex justify-center items-center">
-            <h4 class="text-white text-center text-xl lg:text-5xl footer-text">Stay up to date with Qunatum Systems' latest tech adancements.</h4>
+            <h4 id="about" class="text-white text-center text-xl lg:text-5xl footer-text">Stay up to date with Qunatum Systems' latest tech adancements.</h4>
         </div>
     </div>
 
-    <div class="bottom-footer__inner">
+    <div id="contact" class="bottom-footer__inner">
         <div class="flex flex-col lg:flex-row gap-5 lg:gap-10 ">
             <div class="detail">
                 <p class="text-xs opacity-60 lg:opacity-30">BUSINESS ENQUIRIES</p>
@@ -108,6 +108,7 @@ get_header()
         </div>
     </div>
 </footer>
+
 
 <?php get_footer()
 ?>

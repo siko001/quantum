@@ -26,9 +26,9 @@ if ($services->have_posts()) :
                 <div class="service-box"></div>
                 <div class="title font-custom font-light text-3xl"><?php the_title(); ?></div>
             </div>
-            <div class="description">
+            <div class="description md:text-md lg:text-lg">
                 <?php
-                // Replace 'description_field_group' with the actual field group name you created in ACF
+
                 the_field('description');
                 ?>
             </div>
