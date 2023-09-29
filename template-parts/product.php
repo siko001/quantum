@@ -56,7 +56,7 @@ if ($products_query->have_posts()) :
 
             </div>
             <div class="product_img">
-                <!-- To fix up the img over here -->
+                <img class="product_image" src="<?= $image ?>">
             </div>
         </div>
 

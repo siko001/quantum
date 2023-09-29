@@ -4,7 +4,9 @@ get_header()
 
 <section>
     <!-- For desktop background -->
-    <!-- <div class="hidden lg:block"><?php get_template_part("template-parts/images/desktop-background") ?></div> -->
+    <div class="hidden lg:block desktop_background"> <?php get_template_part("template-parts/images/desktop-background")
+                                                        ?>
+    </div>
 
     <!-- For mobile background -->
     <div class="bg-img lg:hidden relative -top-5 flex flex-col px-5 pb-5 justify-center items-center gap-5 text-center w-auto">
@@ -16,13 +18,23 @@ get_header()
         </p>
     </div>
 
-    <!-- buttons for desktop (phone hidden) -->
+    <!-- Sub-link-buttons for desktop (phone hidden) -->
     <div class="hidden lg:block">
         <div class="flex relative gap-8 z-10 mx-auto justify-center" style="width: 100%; left: -30px; margin-top: 20rem; margin-bottom: 200px">
-            <a href="#products" class=" cursor-pointer border border-p-color bg-p-color hover:border-blue-500 active:bg-p-color active:border-p-color text-white p-3 px-8">Our Products</a>
-            <a href="#Performance Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">Performance</a>
-            <a href="#Essential Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">Essential</a>
-            <a href="#Compact Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">Compact</a>
+
+            <a href="#products" class=" cursor-pointer border border-p-color bg-p-color hover:border-blue-500 active:bg-p-color active:border-p-color text-white p-3 px-8">
+                Our Products
+            </a>
+            <a href="#Performance Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">
+                Performance
+            </a>
+            <a href="#Essential Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">
+                Essential
+            </a>
+            <a href="#Compact Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">
+                Compact
+            </a>
+
         </div>
     </div>
     <!-- Text for Desktop (phone hidden) -->

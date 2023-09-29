@@ -331,3 +331,19 @@ html {
 	background-color: #ff4d5b;
 	font-size: 30px;
 }
+
+.product_image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.desktop_background {
+	top: 0;
+	right: 0;
+	margin-right: 80px;
+	position: absolute;
+	min-width: 65%;
+	max-width: 65%;
+	height: 95vh;
+}

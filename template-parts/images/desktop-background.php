@@ -16,4 +16,4 @@ $image = get_posts($args);
     ?>
 <?php endif; ?>
 
-<img src="<?php echo $image_url[0]; ?>" alt="desktop background" class="w-3/5 min-h-screen absolute right-0 top-0 mr-24 pb-5 object-fit" />
+<img src="<?php echo $image_url[0]; ?>" alt="desktop background" class="product_image" />
