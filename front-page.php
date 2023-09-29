@@ -2,8 +2,6 @@
 get_header()
 ?>
 
-<?= get_template_part("template-parts/nabar"); ?>
-
 <section>
     <!-- For desktop background -->
     <div class="hidden lg:block"><?php get_template_part("template-parts/images/desktop-background") ?></div>
@@ -49,20 +47,41 @@ get_header()
 </section>
 <!-- End Product Section -->
 
+
+
 <!-- Start Services Section -->
 <section>
-    <div class="section_heading flex justify-between">
+    <!-- Section Heading -->
+    <div class="section_heading">
         <div class="left">
-            <p>Our services extend beyond mere computer sales. We offer a holistic approach to your computing needs, ensuring every interaction with Quantum Systems enhances your digital life.
+            <p class="font-custom font-light">Our services extend beyond mere computer sales. We offer a holistic approach to your computing needs, ensuring every interaction with Quantum Systems enhances your digital life.
             </p>
         </div>
-        <div class="right">
-            <h2 class="text-4xl lg:text-5xl font-custom">Our Services</h2>
+        <div class="right ">
+            <h2 class="text-5xl font-custom">Our Services</h2>
         </div>
     </div>
-</section>
 
+    <!--Full Services COntainer -->
+    <div class="full_container flex flex-col">
+        <!-- Top Service Container -->
+        <div class="top_container flex flex-col lg:flex-row justify-between mb-10">
+
+            <?= get_template_part("template-parts/service-top") ?>
+        </div>
+
+        <!-- Bottom Service Continer -->
+        <div class="bottom_container flex flex-col lg:flex-row  justify-between">
+            <?= get_template_part("template-parts/service-bottom") ?>
+        </div>
+
+
+
+
+</section>
 <!-- End Services Section -->
+
+
 
 <?php get_footer()
 ?>

@@ -8,7 +8,7 @@
 
 </head>
 
-<body style="height:800vh;">
+<body>
 
     <?php
     //NavBar
