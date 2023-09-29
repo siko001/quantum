@@ -18,15 +18,15 @@ if ($services->have_posts()) :
 ?>
 
 
-        <!-- left -->
         <div class="service_container flex flex-col mr-4">
             <div class="title_container flex">
-                <div class="service-box"></div>
+                <div class="service-box ">
+                    <div class="background-box "></div>
+                </div>
                 <div class="title font-custom font-light text-3xl"><?php the_title(); ?></div>
             </div>
             <div class="description">
                 <?php
-                // Replace 'description_field_group' with the actual field group name you created in ACF
                 the_field('description');
                 ?>
             </div>
@@ -36,6 +36,5 @@ if ($services->have_posts()) :
 <?php
     endwhile;
     wp_reset_postdata();
-else :
-// No services found.
+
 endif;

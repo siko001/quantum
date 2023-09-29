@@ -8,6 +8,8 @@ function enqueueFiles() {
     wp_enqueue_style('typekit', 'https://use.typekit.net/nzy8uue.css');
     //custom js
     wp_enqueue_script('custom-js', get_template_directory_uri() . "/js/main.js");
+    //GSAP JS file
+    wp_enqueue_script("GSAP_js", get_template_directory_uri() . "/js/script.js");
     //Removed the admin bar for me (just incase i forget)
     show_admin_bar(false);
 }

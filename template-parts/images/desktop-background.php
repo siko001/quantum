@@ -16,4 +16,4 @@ $image = get_posts($args);
     ?>
 <?php endif; ?>
 
-<img src="<?php echo $image_url[0]; ?>" alt="desktop background" class="product_image" />
+<img src="<?php echo $image_url[0]; ?>" alt="desktop background" class="product_image brightness-75" style="" />

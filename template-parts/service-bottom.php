@@ -2,7 +2,7 @@
 
 <?php
 get_header();
-$exclude_posts = array(33, 32); // Replace 1 and 2 with the actual post IDs you want to exclude
+$exclude_posts = array(33, 32); //Excluding the posts types already targeted
 
 $args = array(
 
@@ -18,12 +18,11 @@ $services = new WP_Query($args);
 if ($services->have_posts()) :
     while ($services->have_posts()) : $services->the_post();
 ?>
-
-
-        <!-- left -->
         <div class="service_container flex flex-col mr-4">
             <div class="title_container flex">
-                <div class="service-box"></div>
+                <div class="service-box">
+                    <div class="background-box"></div>
+                </div>
                 <div class="title font-custom font-light text-3xl"><?php the_title(); ?></div>
             </div>
             <div class="description md:text-md lg:text-lg">
@@ -38,8 +37,6 @@ if ($services->have_posts()) :
 <?php
     endwhile;
     wp_reset_postdata();
-else :
-// No services found.
 endif;
 
 get_footer();

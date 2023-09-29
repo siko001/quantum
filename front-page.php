@@ -2,16 +2,16 @@
 get_header()
 ?>
 
+<!-- Displaying the mobile/desktop BG + content -->
 <section>
     <!-- For desktop background -->
-    <div class="hidden lg:block desktop_background"> <?php get_template_part("template-parts/images/desktop-background")
-                                                        ?>
+    <div class="hidden lg:block desktop_background ">
+        <?php get_template_part("template-parts/images/desktop-background") ?>
     </div>
 
     <!-- For mobile background -->
     <div class="bg-img lg:hidden relative -top-5 flex flex-col px-5 pb-5 justify-center items-center gap-5 text-center w-auto">
         <?php get_template_part("template-parts/images/mobile-background") ?>
-
         <p class="font-custom font-light w-92 text-base">
             Quantum Systems stands at the forefront of personal computer engineering and retailing. Our mission is to redefine the boundaries
             of computing by meticulously engineering PCs tailored to each customer's unique needs.
@@ -22,37 +22,39 @@ get_header()
     <div class="hidden lg:block">
         <div class="flex relative gap-8 z-10 mx-auto justify-center" style="width: 100%; left: -30px; margin-top: 20rem; margin-bottom: 200px">
 
-            <a href="#products" class=" cursor-pointer border border-p-color bg-p-color hover:border-blue-500 active:bg-p-color active:border-p-color text-white p-3 px-8">
+            <a href="#products" class=" cursor-pointer border border-p-color bg-p-color  text-white p-3 px-8 sub-menu">
                 Our Products
             </a>
-            <a href="#Performance Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">
+            <a href="#Performance Series" class="cursor-pointer border-2 border-p-color  p-3 text-white px-8 sub-menu">
                 Performance
             </a>
-            <a href="#Essential Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">
+            <a href="#Essential Series" class="cursor-pointer border-2 border-p-color  p-3 text-white px-8 sub-menu">
                 Essential
             </a>
-            <a href="#Compact Series" class="cursor-pointer border-2 border-p-color hover:border-blue-500 active:bg-p-color active:border-p-color p-3 text-white px-8">
+            <a href="#Compact Series" class="cursor-pointer border-2 border-p-color p-3 text-white px-8 sub-menu">
                 Compact
             </a>
 
         </div>
     </div>
+
     <!-- Text for Desktop (phone hidden) -->
     <p class="hidden lg:block font-custom font-light w-92 text-base mr-24 mt-5" style="width: 33%; float: right">
         Quantum Systems stands at the forefront of personal computer engineering and retailing. Our mission is to redefine the boundaries of
         computing by meticulously engineering PCs tailored to each customer's unique needs.
     </p>
 </section>
-
+<!-- End -->
 
 <!--Start Product Section -->
 <section class="flex flex-col gap-5">
     <h1 id="products" class="text-4xl lg:text-5xl mr-2 font-custom relative lg:pt-40 lg:mt-10 lg:ml-32 section_title" style="padding-top: 100px">
         Our Products
     </h1>
-    <br />
-    <div class="lg:ml-32 product_box">
 
+    <br />
+
+    <div class="lg:ml-32 product_box">
         <!-- Products Query (grabs first 3 but can be adjusted) -->
         <?= get_template_part("template-parts/product") ?>
     </div>
@@ -90,7 +92,7 @@ get_header()
 </section>
 <!-- End Services Section -->
 
-
+<!-- Footer -->
 <footer class="flex gap-10 flex-col  mt-10 pt-10 ">
     <!-- Top footer Section -->
     <div class="top-footer flex-col justify-center items-center">
@@ -99,7 +101,7 @@ get_header()
             <h4 id="about" class="text-white text-center text-xl lg:text-5xl footer-text">Stay up to date with Qunatum Systems' latest tech adancements.</h4>
         </div>
     </div>
-
+    <!-- Contact / Details -->
     <div id="contact" class="bottom-footer__inner">
         <div class="flex flex-col lg:flex-row gap-5 lg:gap-10 ">
             <div class="detail">
@@ -116,11 +118,12 @@ get_header()
             </div>
         </div>
         <div>
+            <!-- The stylish box -->
             <div class="footer_box"></div>
         </div>
     </div>
 </footer>
-
+<!-- End Footer -->
 
 <?php get_footer()
 ?>

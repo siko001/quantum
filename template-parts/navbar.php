@@ -3,7 +3,7 @@
 <!-- NavBar -->
 <nav class="w-auto flex sticky flex-col-reverse justify-center lg:flex-row lg:justify-between relative z-10 ">
     <!-- LOGO -->
-    <h1 class="flex flex-nowrap justify-center mt-6 text-4xl lg:text-5xl font-custom lg:mt-20 lg:ml-32">Quantum Systems</h1>
+    <h1 class="flex flex-nowrap justify-center mt-6 text-4xl lg:text-5xl font-custom lg:mt-20 lg:ml-32 logo">Quantum Systems</h1>
 
 
     <!-- Desktop Dynamic Nav-menu -->

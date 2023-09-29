@@ -70,3 +70,4 @@ else :
     echo 'No products found.';
 endif;
 ?>
+<?= get_footer() ?>
