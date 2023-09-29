@@ -4,7 +4,7 @@ get_header()
 
 <section>
     <!-- For desktop background -->
-    <div class="hidden lg:block"><?php get_template_part("template-parts/images/desktop-background") ?></div>
+    <!-- <div class="hidden lg:block"><?php get_template_part("template-parts/images/desktop-background") ?></div> -->
 
     <!-- For mobile background -->
     <div class="bg-img lg:hidden relative -top-5 flex flex-col px-5 pb-5 justify-center items-center gap-5 text-center w-auto">
@@ -75,13 +75,39 @@ get_header()
             <?= get_template_part("template-parts/service-bottom") ?>
         </div>
 
-
-
-
 </section>
 <!-- End Services Section -->
 
 
+<footer class="flex gap-10 flex-col  mt-10 pt-10 ">
+    <!-- Top footer Section -->
+    <div class="top-footer flex-col justify-center items-center">
+        <!-- Inner footer Div -->
+        <div class="top-footer__inner flex justify-center items-center">
+            <h4 class="text-white text-center text-xl lg:text-5xl footer-text">Stay up to date with Qunatum Systems' latest tech adancements.</h4>
+        </div>
+    </div>
+
+    <div class="bottom-footer__inner">
+        <div class="flex flex-col lg:flex-row gap-5 lg:gap-10 ">
+            <div class="detail">
+                <p class="text-xs opacity-60 lg:opacity-30">BUSINESS ENQUIRIES</p>
+                <p class="text-md font-bold ">contact@quantumsystems.mt</p>
+            </div>
+            <div class="detail">
+                <p class="text-xs opacity-60 lg:opacity-30">PHONE</p>
+                <p class="text-md font-bold ">(+356) 1234 5678</p>
+            </div>
+            <div class="detail">
+                <p class="text-xs opacity-60 lg:opacity-30">FACTORY AND OFFICES</p>
+                <p class="text-md font-bold ">Quantum Systems, Quantum Towers, Mosta, MST 2470, Malta</p>
+            </div>
+        </div>
+        <div>
+            <div class="footer_box"></div>
+        </div>
+    </div>
+</footer>
 
 <?php get_footer()
 ?>
