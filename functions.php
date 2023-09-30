@@ -1,4 +1,5 @@
 <?php
+
 function enqueueFiles() {
     //Tailwind 
     wp_enqueue_style('tailwindcss_setup', get_template_directory_uri() . "/dist/output.css");

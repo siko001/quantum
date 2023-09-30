@@ -1,5 +1,5 @@
 <?php
-
+// Mobile Background photo
 $args = array(
     'post_type' => 'attachment',
     'post_mime_type' => 'image',
@@ -15,4 +15,4 @@ $image = get_posts($args);
 
     ?>
 <?php endif; ?>
-<img src="<?php echo $image_url[0]; ?>" alt="Mobile background" class="w-6/7" />
+<img src="<?php echo $image_url[0]; ?>" alt="Mobile background" class="w-6/7 clip-path" />

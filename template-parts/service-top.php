@@ -16,8 +16,7 @@ $services = new WP_Query($args);
 if ($services->have_posts()) :
     while ($services->have_posts()) : $services->the_post();
 ?>
-
-
+        <!-- 2 Top services pulled -->
         <div class="service_container flex flex-col mr-4">
             <div class="title_container flex">
                 <div class="service-box ">
@@ -31,8 +30,6 @@ if ($services->have_posts()) :
                 ?>
             </div>
         </div>
-
-
 <?php
     endwhile;
     wp_reset_postdata();

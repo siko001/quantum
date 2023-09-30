@@ -12,9 +12,7 @@ $args = array(
     'orderby' => 'ID',
     'post__not_in'   => $exclude_posts, // Exclude specified posts
 );
-
 $services = new WP_Query($args);
-
 if ($services->have_posts()) :
     while ($services->have_posts()) : $services->the_post();
 ?>
@@ -32,8 +30,7 @@ if ($services->have_posts()) :
                 ?>
             </div>
         </div>
-
-
+        <!-- 2 Bottom services pulled -->
 <?php
     endwhile;
     wp_reset_postdata();
